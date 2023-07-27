@@ -19,6 +19,7 @@ return new class extends Migration
 
             $table -> string('name', 64);
             $table -> text('description') -> nullable();
+            $table -> string('cover') -> nullable();
             $table -> date('start_date');
             $table -> date('end_date');
             $table -> string('difficulty', 18);

@@ -8,11 +8,15 @@
         <form
             method="POST"
             action="{{ route('project.store') }}"
+            enctype= "multipart/from-data"
         >
 
             @csrf
             @method("POST")
 
+            <label for="name">COVER</label>
+            <br>
+            <input type="file" name="cover" id="cover">
             <label for="name">NAME</label>
             <br>
             <input type="text" name="name" id="name">
