@@ -14,14 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('project_technology', function (Blueprint $table) {
-            // $table->id();
-            // $table->timestamps();
-            $table->unsignedBigInteger('technology_id');
-            $table->foreign('technology_id')->references('id')->on('technologies');
-
-            $table->unsignedBigInteger('project_id');
-            $table->foreign('project_id')->references('id')->on('projects');
-            
+            $table->id();
         });
     }
 
