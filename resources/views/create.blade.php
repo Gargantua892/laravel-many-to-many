@@ -17,6 +17,7 @@
             <label for="name">COVER</label>
             <br>
             <input type="file" name="cover" id="cover">
+            <br>
             <label for="name">NAME</label>
             <br>
             <input type="text" name="name" id="name">

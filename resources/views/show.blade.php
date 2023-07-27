@@ -3,6 +3,7 @@
 @section('content')
 
     <div class="container text-center pt-5">
+        <img src="{{ asset('storage/' . $project -> cover) }}">
         <h1>{{ $project -> name }}</h1>
         <p>
             {{ $project -> description }}
